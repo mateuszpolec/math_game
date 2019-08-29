@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Project</title>
-    <link rel="stylesheet" href="main.bundle.css" />
+    <title>Math Game</title>
+    <link rel="stylesheet" href="style/style.css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -122,6 +122,8 @@
           <p id="extratime"></p>
         </div>
       </div>
+      <!-- Game run stop -->
+      <!-- Game summary start -->
       <div id="game-summary">
         <div class="col-sm-12 col-md-6 mx-auto text-center">
           <h4 class = "mt-2 color-white"><i class="fas fa-star mr-2"></i>Score: <span id = "score"></span></h4>
@@ -148,9 +150,10 @@
           </h4>
         </div>
       </div>
+      <!-- Game summary stop-->
     </div>
     <!-- Game stop -->
 
-    <script src="main.bundle.js"></script>
+    <script src="scripts/engine.js"></script>
   </body>
 </html>
