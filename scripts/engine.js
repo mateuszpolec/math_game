@@ -57,7 +57,7 @@ $("#userInput").keypress(function(e) {
   e = window.event;
   if (e.keyCode == "13") {
     if ($("#userInput").val() == eval(equationInstance)) {
-      equationInstance = new equation().solve;
+      equationInstance = equation().solve;
       $("#equation").html(equationInstance);
       game.time += +2;
       game.correct_answer += 1;
