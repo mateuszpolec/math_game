@@ -27,6 +27,16 @@ const game = {
       $("#correct_answer").html(game.correct_answer);
       $("#wrong_answer").html(game.wrong_answer);
     }
+  },
+  restart: () => {
+    game.level =  0;
+    game.score =  0;
+    game.time = 16;
+    game.total_extra_time = 0;
+    game.total_minus_time = 0;
+    game.correct_answer = 0;
+    game.wrong_answer = 0;
+    $("#countdown").html(game.time);
   }
 };
 
@@ -104,4 +114,10 @@ $("#game-start").click(function() {
   $("#intro").css("display", "none");
   $("#game-run").css("display", "flex");
   game.timer();
+});
+
+$("#game-restart").click(function() {
+  $("#game-run").css("display", "flex");
+  $("#game-summary").css("display", "none");
+  game.restart();
 });
